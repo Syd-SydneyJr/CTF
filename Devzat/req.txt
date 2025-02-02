@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2021.12.1" exportTime="Mon Mar 07 18:48:54 IST 2022">
+  <item>
+    <time>Mon Mar 07 18:40:34 IST 2022</time>
+    <url><![CDATA[http://pets.devzat.htb/api/pet]]></url>
+    <host ip="10.10.11.118">pets.devzat.htb</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/api/pet]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[UE9TVCAvYXBpL3BldCBIVFRQLzEuMQ0KSG9zdDogcGV0cy5kZXZ6YXQuaHRiDQpDb250ZW50LUxlbmd0aDogMzINClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS85Ny4wLjQ2OTIuNzEgU2FmYXJpLzUzNy4zNg0KQ29udGVudC1UeXBlOiB0ZXh0L3BsYWluO2NoYXJzZXQ9VVRGLTgNCkFjY2VwdDogKi8qDQpPcmlnaW46IGh0dHA6Ly9wZXRzLmRldnphdC5odGINClJlZmVyZXI6IGh0dHA6Ly9wZXRzLmRldnphdC5odGIvDQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXAsIGRlZmxhdGUNCkFjY2VwdC1MYW5ndWFnZTogZW4tR0IsZW4tVVM7cT0wLjksZW47cT0wLjgNCkNvbm5lY3Rpb246IGNsb3NlDQoNCnsibmFtZSI6IjEyMzQ1Iiwic3BlY2llcyI6ImNhdCJ9]]></request>
+    <status></status>
+    <responselength></responselength>
+    <mimetype></mimetype>
+    <response base64="true"></response>
+    <comment></comment>
+  </item>
+</items>

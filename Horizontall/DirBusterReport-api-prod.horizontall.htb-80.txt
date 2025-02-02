@@ -1,0 +1,46 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Sat Jan 15 19:50:47 IST 2022
+--------------------------------
+
+http://api-prod.horizontall.htb:80
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 200 response:
+
+/
+/admin/
+/reviews/
+/reviews/1/
+/reviews/01/
+/reviews/2/
+/reviews/03/
+/reviews/02/
+/reviews/3/
+/admin/layout/
+
+Dirs found with a 403 response:
+
+/users/
+/connect/
+/admin/plugins/
+
+
+--------------------------------
+Files found during testing:
+
+Files found with a 200 responce:
+
+/reviews/1.php
+/reviews/01.php
+/reviews/2.php
+/reviews/03.php
+/reviews/02.php
+/reviews/3.php
+/admin/runtime~main.d078dc17.js
+/admin/main.da91597e.chunk.js
+/reviews/1x1.php
+
+
+--------------------------------

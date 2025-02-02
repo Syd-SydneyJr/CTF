@@ -1,0 +1,111 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-07 06:08 IST
+Nmap scan report for 10.10.11.118
+Host is up (0.34s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 c2:5f:fb:de:32:ff:44:bf:08:f5:ca:49:d4:42:1a:06 (RSA)
+|   256 bc:cd:e8:ee:0a:a9:15:76:52:bc:19:a4:a3:b2:ba:ff (ECDSA)
+|_  256 62:ef:72:52:4f:19:53:8b:f2:9b:be:46:88:4b:c3:d0 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.41
+|_http-title: Did not follow redirect to http://devzat.htb/
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+8000/tcp open  ssh     (protocol 2.0)
+| ssh-hostkey: 
+|_  3072 6a:ee:db:90:a6:10:30:9f:94:ff:bf:61:95:2a:20:63 (RSA)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0-Go
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8000-TCP:V=7.92%I=7%D=3/7%Time=62255414%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,C,"SSH-2\.0-Go\r\n");
+Service Info: Host: devzat.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+
+==================================================================================
+
+Nmap done: 1 IP address (1 host up) scanned in 78.79 seconds
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-07 06:18 IST
+Nmap scan report for 10.10.11.118
+Host is up (0.20s latency).
+All 1000 scanned ports on 10.10.11.118 are in ignored states.
+Not shown: 1000 closed udp ports (port-unreach)
+
+Nmap done: 1 IP address (1 host up) scanned in 1113.63 seconds
+
+
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+
+
+Active ports
+
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:8086          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:8443          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:5000          0.0.0.0:*               LISTEN      870/./petshop       
+tcp        0      0 10.10.11.118 ::22         10.10.15.34:59196       ESTABLISHED -                   
+tcp        0      1 10.10.11.118:40734      1.1.1.1:53              SYN_SENT    -                   
+tcp        0      0 10.10.11.118:47898      10.10.15.34:8000        ESTABLISHED 119051/./chisel     
+tcp        0      0 10.10.11.118:22         10.10.15.116:48952      ESTABLISHED -                   
+tcp        0    448 10.10.11.118:22         10.10.14.110:50804      ESTABLISHED -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      -                   
+tcp6       0      0 :::8000                 :::*                    LISTEN      868/./devchat       
+tcp6       0      0 :::80                   :::*                    LISTEN      -                   
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           -                   
+udp        0      0 127.0.0.1:44414         127.0.0.53:53           ESTABLISHED -                   
+udp        0      0 10.10.11.118:34753      10.10.14.248:4444       ESTABLISHED 88558/sh
+
+=================================================================================================
+
+CREDS
+
+catherine : woBeeYareedahc7Oogeephies7Aiseci
+
+charles :  RoyalQueenBee$
+
+wilhelm : WillyWonka2021
+
+
+=================================================================================================
+
+
+user : 3e4a0f86c0c529c501cccb24fb6a5ea4
