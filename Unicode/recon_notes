@@ -1,0 +1,22 @@
+# Nmap 7.92 scan initiated Tue Mar 22 20:17:29 2022 as: nmap -sC -sV -oN /home/sydney/Desktop/HTB/Machines/Unicode/recon_notes 10.10.11.126
+Nmap scan report for 10.10.11.126
+Host is up (0.60s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE    VERSION
+22/tcp    open     ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 fd:a0:f7:93:9e:d3:cc:bd:c2:3c:7f:92:35:70:d7:77 (RSA)
+|   256 8b:b6:98:2d:fa:00:e5:e2:9c:8f:af:0f:44:99:03:b1 (ECDSA)
+|_  256 c9:89:27:3e:91:cb:51:27:6f:39:89:36:10:41:df:7c (ED25519)
+80/tcp    open     http       nginx 1.18.0 (Ubuntu)
+|_http-title: Hackmedia
+|_http-generator: Hugo 0.83.1
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-trane-info: Problem with XML parsing of /evox/about
+2030/tcp  filtered device2
+3323/tcp  filtered active-net
+50003/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar 22 20:20:53 2022 -- 1 IP address (1 host up) scanned in 204.68 seconds

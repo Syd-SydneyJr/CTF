@@ -1,0 +1,75 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-04 05:21 CST
+Nmap scan report for 10.10.11.48
+Host is up (0.056s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|_  256 48:b0:d2:c7:29:26:ae:3d:fb:b7:6b:0f:f5:4d:2a:ea (ECDSA)
+80/tcp open  http    Apache httpd 2.4.52 ((Ubuntu))
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.50 seconds
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-04 10:30 CST
+Nmap scan report for underpass.htb (10.10.11.48)
+Host is up (0.14s latency).
+
+PORT    STATE SERVICE VERSION
+161/udp open  snmp    SNMPv1 server; net-snmp SNMPv3 server (public)
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: c7ad5c4856d1cf6600000000
+|   snmpEngineBoots: 29
+|_  snmpEngineTime: 1h10m32s
+| snmp-sysdescr: Linux underpass 5.15.0-126-generic #136-Ubuntu SMP Wed Nov 6 10:38:22 UTC 2024 x86_64
+|_  System uptime: 1h10m31.85s (423185 timeticks)
+Service Info: Host: UnDerPass.htb is the only daloradius server in the basin!
+
+1059/udp  open|filtered nimreg
+1812/udp  open|filtered radius
+1813/udp  open|filtered radacct
+
+-------------------------------------
+
+Host IP address               : 10.10.11.48
+  Hostname                      : UnDerPass.htb is the only daloradius server in the basin!
+  Description                   : Linux underpass 5.15.0-126-generic #136-Ubuntu SMP Wed Nov 6 10:38:22 UTC 2024 x86_64
+  Contact                       : steve@underpass.htb
+  Location                      : Nevada, U.S.A. but not Vegas
+  Uptime snmp                   : 01:17:41.61
+  Uptime system                 : 01:17:28.62
+  System date                   : 2025-1-4 22:37:21.0
+
+iso.3.6.1.2.1.1.9.1.2.1 = OID: iso.3.6.1.6.3.10.3.1.1
+iso.3.6.1.2.1.1.9.1.2.2 = OID: iso.3.6.1.6.3.11.3.1.1
+iso.3.6.1.2.1.1.9.1.2.3 = OID: iso.3.6.1.6.3.15.2.1.1
+iso.3.6.1.2.1.1.9.1.2.4 = OID: iso.3.6.1.6.3.1
+iso.3.6.1.2.1.1.9.1.2.5 = OID: iso.3.6.1.6.3.16.2.2.1
+iso.3.6.1.2.1.1.9.1.2.6 = OID: iso.3.6.1.2.1.49
+iso.3.6.1.2.1.1.9.1.2.7 = OID: iso.3.6.1.2.1.50
+iso.3.6.1.2.1.1.9.1.2.8 = OID: iso.3.6.1.2.1.4
+iso.3.6.1.2.1.1.9.1.2.9 = OID: iso.3.6.1.6.3.13.3.1.3
+iso.3.6.1.2.1.1.9.1.2.10 = OID: iso.3.6.1.2.1.92
+
+
+http://underpass.htb/daloradius/app/operators/login.php
+administrator:radius
+crack hash foudn in the dashboard 
+svcmosh:underwaterfriends
+ssh in
+user.txt
+sudo -l
+root.txt
+
+root@underpass:~# cat root.txt
+157efc5c8db291735c1de1260cdcbaef
+root@underpass:~# 
+
+
+
+
