@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2022.8.4" exportTime="Wed Jan 25 08:19:12 EST 2023">
+  <item>
+    <time>Wed Dec 31 19:00:00 EST 1969</time>
+    <url><![CDATA[http://dev.stocker.htb/login]]></url>
+    <host ip="10.10.11.196">dev.stocker.htb</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/login]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[UE9TVCAvbG9naW4gSFRUUC8xLjENCkhvc3Q6IGRldi5zdG9ja2VyLmh0Yg0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgcnY6MTAyLjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvMTAyLjANCkFjY2VwdDogdGV4dC9odG1sLGFwcGxpY2F0aW9uL3hodG1sK3htbCxhcHBsaWNhdGlvbi94bWw7cT0wLjksaW1hZ2UvYXZpZixpbWFnZS93ZWJwLCovKjtxPTAuOA0KQWNjZXB0LUxhbmd1YWdlOiBlbi1VUyxlbjtxPTAuNQ0KQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlDQpSZWZlcmVyOiBodHRwOi8vZGV2LnN0b2NrZXIuaHRiL2xvZ2luDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCkNvbnRlbnQtTGVuZ3RoOiA2MA0KT3JpZ2luOiBodHRwOi8vZGV2LnN0b2NrZXIuaHRiDQpETlQ6IDENCkNvbm5lY3Rpb246IGNsb3NlDQpDb29raWU6IGNvbm5lY3Quc2lkPXMlM0FXXzZmNm9CMFNXcUowaVcwT21BdHV2dnZ4ZGxQQmwzTC55ZHBRRkM3ejR4V0ZMdjklMkZqJTJCV3clMkIlMkZ4UEVvUGhmcXdZYTBNZEhhckRhcEkNClVwZ3JhZGUtSW5zZWN1cmUtUmVxdWVzdHM6IDENCg0KeyJ1c2VybmFtZSI6IHsiJG5lIjogIkFETUlOIn0sICJwYXNzd29yZCI6IHsiJG5lIjogIm51bGwifSB9]]></request>
+    <status>302</status>
+    <responselength>406</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMzAyIEZvdW5kDQpTZXJ2ZXI6IG5naW54LzEuMTguMCAoVWJ1bnR1KQ0KRGF0ZTogV2VkLCAyNSBKYW4gMjAyMyAxOToxNzoyNSBHTVQNCkNvbnRlbnQtVHlwZTogdGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04DQpDb250ZW50LUxlbmd0aDogNTYNCkNvbm5lY3Rpb246IGNsb3NlDQpYLVBvd2VyZWQtQnk6IEV4cHJlc3MNCkxvY2F0aW9uOiAvc3RvY2sNClZhcnk6IEFjY2VwdA0KU2V0LUNvb2tpZTogY29ubmVjdC5zaWQ9cyUzQW5ac19IMlFidDk4TjFCS2Z1RUNYM2daY2dVWVhwUjRWLm5qcVNTVDFYS0hNU1NvVU1XV21VenMlMkZuQ1B4dUJhbzhZUWVDdXNWdDVIRTsgUGF0aD0vOyBIdHRwT25seQ0KDQo8cD5Gb3VuZC4gUmVkaXJlY3RpbmcgdG8gPGEgaHJlZj0iL3N0b2NrIj4vc3RvY2s8L2E+PC9wPg==]]></response>
+    <comment></comment>
+  </item>
+</items>
