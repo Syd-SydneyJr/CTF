@@ -16,7 +16,7 @@ Throughout the challenges, I've used a variety of tools and techniques, includin
 
     Web Exploitation: SQL injection, XSS, CSRF, file inclusion, etc.
 
-    Cryptography: RSA, AES, XOR, frequency analysis, etc.
+    Cryptography: RSA, AES, WEP, MD5
 
 📚 Resources
 
