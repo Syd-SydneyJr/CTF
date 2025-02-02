@@ -1,0 +1,18 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-12-17 13:03 CST
+Nmap scan report for precious.htb (10.10.11.189)
+Host is up (0.29s latency).
+Not shown: 999 closed udp ports (port-unreach)
+PORT   STATE         SERVICE VERSION
+68/udp open|filtered dhcpc
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE (using port 20791/udp)
+HOP RTT       ADDRESS
+1   341.11 ms 10.10.14.1
+2   341.24 ms precious.htb (10.10.11.189)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1130.35 seconds
+
+henry:Q3c1AqGHtoI0aXAYFH

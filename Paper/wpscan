@@ -1,0 +1,89 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.17
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[+] URL: http://office.paper/ [10.10.11.143]
+[+] Started: Wed Feb 23 04:58:15 2022
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.37 (centos) OpenSSL/1.1.1k mod_fcgid/2.3.9
+ |  - X-Powered-By: PHP/7.2.24
+ |  - X-Backend-Server: office.paper
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] WordPress readme found: http://office.paper/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] WordPress version 5.2.3 identified (Insecure, released on 2019-09-05).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://office.paper/index.php/feed/, <generator>https://wordpress.org/?v=5.2.3</generator>
+ |  - http://office.paper/index.php/comments/feed/, <generator>https://wordpress.org/?v=5.2.3</generator>
+
+[+] WordPress theme in use: construction-techup
+ | Location: http://office.paper/wp-content/themes/construction-techup/
+ | Last Updated: 2021-07-17T00:00:00.000Z
+ | Readme: http://office.paper/wp-content/themes/construction-techup/readme.txt
+ | [!] The version is out of date, the latest version is 1.4
+ | Style URL: http://office.paper/wp-content/themes/construction-techup/style.css?ver=1.1
+ | Style Name: Construction Techup
+ | Description: Construction Techup is child theme of Techup a Free WordPress Theme useful for Business, corporate a...
+ | Author: wptexture
+ | Author URI: https://testerwp.com/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 1.1 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://office.paper/wp-content/themes/construction-techup/style.css?ver=1.1, Match: 'Version: 1.1'
+
+[+] Enumerating All Plugins (via Aggressive Methods)
+ Checking Known Locations - Time: 01:33:47 <==========================================================================================================> (96971 / 96971) 100.00% Time: 01:33:47
+[+] Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[i] Plugin(s) Identified:
+
+[+] stops-core-theme-and-plugin-updates
+ | Location: http://office.paper/wp-content/plugins/stops-core-theme-and-plugin-updates/
+ | Last Updated: 2022-01-05T11:34:00.000Z
+ | Readme: http://office.paper/wp-content/plugins/stops-core-theme-and-plugin-updates/readme.txt
+ | [!] The version is out of date, the latest version is 9.0.12
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://office.paper/wp-content/plugins/stops-core-theme-and-plugin-updates/, status: 200
+ |
+ | Version: 9.0.9 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://office.paper/wp-content/plugins/stops-core-theme-and-plugin-updates/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://office.paper/wp-content/plugins/stops-core-theme-and-plugin-updates/readme.txt
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+ Checking Config Backups - Time: 00:00:07 <===============================================================================================================> (137 / 137) 100.00% Time: 00:00:07
+
+[i] No Config Backups Found.
+
+[!] No WPScan API Token given, as a result vulnerability data has not been output.
+[!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[+] Finished: Wed Feb 23 06:32:23 2022
+[+] Requests Done: 97116
+[+] Cached Requests: 36
+[+] Data Sent: 25.843 MB
+[+] Data Received: 18.858 MB
+[+] Memory used: 461.988 MB
+[+] Elapsed time: 01:34:08

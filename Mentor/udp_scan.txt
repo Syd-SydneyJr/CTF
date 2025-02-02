@@ -1,0 +1,19 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-11 19:34 CST
+Nmap scan report for mentorquotes.htb (10.10.11.193)
+Host is up (0.051s latency).
+
+PORT    STATE         SERVICE VERSION
+68/udp  open|filtered dhcpc
+161/udp open          snmp    SNMPv1 server; net-snmp SNMPv3 server (public)
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: a124f60a99b99c6200000000
+|   snmpEngineBoots: 67
+|_  snmpEngineTime: 1d07h20m59s
+| snmp-sysdescr: Linux mentor 5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022 x86_64
+|_  System uptime: 1d07h20m59.56s (11285956 timeticks)
+Service Info: Host: mentor
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 114.77 seconds

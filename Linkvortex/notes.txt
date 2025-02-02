@@ -1,0 +1,38 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-04 13:41 CST
+Nmap scan report for linkvortex.htb (10.10.11.47)
+Host is up (0.055s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 3e:f8:b9:68:c8:eb:57:0f:cb:0b:47:b9:86:50:83:eb (ECDSA)
+|_  256 a2:ea:6e:e1:b6:d7:e7:c5:86:69:ce:ba:05:9e:38:13 (ED25519)
+80/tcp open  http    Apache httpd
+| http-robots.txt: 4 disallowed entries 
+|_/ghost/ /p/ /email/ /r/
+|_http-server-header: Apache
+|_http-title: BitByBit Hardware
+|_http-generator: Ghost 5.58
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.27 seconds
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-04 14:22 CST
+Nmap scan report for linkvortex.htb (10.10.11.47)
+Host is up (0.10s latency).
+Not shown: 96 closed udp ports (port-unreach)
+PORT      STATE         SERVICE        VERSION
+68/udp    open|filtered dhcpc
+80/udp    open|filtered http
+593/udp   open|filtered http-rpc-epmap
+49156/udp open|filtered unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 223.36 seconds
+
+username: admin@linkvortex.htb password: OctopiFociPilfer45  
+
+"user": "bob@linkvortex.htb",
+"pass": "fibber-talented-worth"
+

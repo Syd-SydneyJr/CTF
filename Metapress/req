@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2022.8.4" exportTime="Wed Mar 22 19:43:22 CDT 2023">
+  <item>
+    <time>Wed Dec 31 18:00:00 CST 1969</time>
+    <url><![CDATA[http://metapress.htb/wp-admin/admin-ajax.php]]></url>
+    <host ip="10.10.11.186">metapress.htb</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/wp-admin/admin-ajax.php]]></path>
+    <extension>php</extension>
+    <request base64="true"><![CDATA[UE9TVCAvd3AtYWRtaW4vYWRtaW4tYWpheC5waHAgSFRUUC8xLjENCkhvc3Q6IG1ldGFwcmVzcy5odGINClVzZXItQWdlbnQ6IGN1cmwvNy44NS4wDQpBY2NlcHQ6ICovKg0KQ29udGVudC1MZW5ndGg6IDE4NQ0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQNCkNvbm5lY3Rpb246IGNsb3NlDQoNCmFjdGlvbj1ib29raW5ncHJlc3NfZnJvbnRfZ2V0X2NhdGVnb3J5X3NlcnZpY2VzJl93cG5vbmNlPTA2YWNkYWY1YWQmY2F0ZWdvcnlfaWQ9MzMmdG90YWxfc2VydmljZT0x]]></request>
+    <status></status>
+    <responselength></responselength>
+    <mimetype></mimetype>
+    <response base64="true"></response>
+    <comment></comment>
+  </item>
+</items>
